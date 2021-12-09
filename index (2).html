@@ -1,0 +1,27 @@
+<html>
+    <head>
+       <title>MY FAMILY BOOK</title> 
+    </head>
+    <body style="text-align: center;background-color: darkorange;">
+        <h1>MY FAMILY BOOK</h1>
+        <image id="image1" src="familybook.jfif"></image>
+        <h2 id="name">My Family Book</h2>
+        <button id="click" onclick="nextImage()">NEXT</button>
+    </body>
+    <script>
+      var images=["familybook.jfif","father.jfif","mother.jfif","brother.jfif","sister.png"];
+      var names=["Family Book","Anil Sharma","Priya Sharma","Rohan","Sia"];
+      var i=0;
+      function nextImage()
+      {
+          i++;
+          if(i > 4)
+          {
+              i=0;
+          }
+          document.getElementById("image1").src=images[i];
+          document.getElementById("name").innerHTML=names[i];
+      }
+
+    </script>
+</html>
